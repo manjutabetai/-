@@ -7,9 +7,7 @@ function App() {
   const [inputText, setInputText] = useState("")
   const [inputTime, setInputTime] = useState(0)
   const [records, setRecords] = useState(
-    [ { title: "勉強の記録1", time: 1},
-  { title: "勉強の記録2", time: 3},
-    { title: "勉強の記録3", time: 5}]
+    []
     );
 
 
