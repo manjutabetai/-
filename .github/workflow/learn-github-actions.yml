@@ -1,0 +1,13 @@
+名前: learn-github-actions
+実行名: ${{ github.actor }} は GitHub Actions を学習しています
+オン: [プッシュ]
+仕事:
+  チェックバットバージョン:
+    動作環境: ubuntu-latest
+    手順:
+      - 使用: actions/checkout@v4
+      - 使用: actions/setup-node@v4
+        と：
+          ノードバージョン: '20'
+      - 実行: npm install -g bats
+      - 実行: bats -v
